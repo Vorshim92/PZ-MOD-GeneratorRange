@@ -1,0 +1,6 @@
+Sandbox_EN = {
+    Sandbox_Test.Boolean = "Test Boolean",
+	Sandbox_Test.Integer = "Test Integer",
+	Sandbox_Test.String = "Test String",
+    Sandbox_Test = "Test",
+}

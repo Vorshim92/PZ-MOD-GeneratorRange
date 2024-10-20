@@ -1,0 +1,28 @@
+VERSION = 1,
+
+option Test.Boolean
+{
+  type = boolean,
+  default = true,
+
+  page = Test,
+  translation = Test.Boolean,
+}
+
+option Test.Integer
+{
+  type = integer,
+  default = 0, min = 0, max = 100,
+
+  page = Test,
+  translation = Test.Integer,
+}
+
+option Test.String
+{
+  type = string,
+  default = None,
+
+  page = Test,
+  translation = Test.String,
+}

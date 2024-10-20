@@ -39,14 +39,18 @@ local function ReplaceExistingObject(object, fuel, condition)
 end
 
 local function changeGenerator(object)
+	local modData = object:getModData()
+	if modData.isModded then
+		print("il generatore e' stato modificato")
+	end
 	local square = object:getSquare()
 	print ('square: '..tostring(square:getX())..' '..tostring(square:getY()) ..' '..tostring(square:getZ()))
 	local preFuel = object:getFuel()
 	print('preFuel: '..tostring(preFuel))
-	object:setFuel(100)
+	preFuel = 99999999
 	print('postFuel: '..tostring(object:getFuel()))
 	-- ReplaceExistingObject(object, fuel, condition)
-	local modData = object:getModData()
+	
 	modData.isModded = true
 end
 

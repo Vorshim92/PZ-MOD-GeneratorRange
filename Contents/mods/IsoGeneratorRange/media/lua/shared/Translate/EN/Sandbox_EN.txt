@@ -1,0 +1,4 @@
+Sandbox_EN = {
+Sandbox_IsoGenerator_Boolean = "Active IsoGenerator Range",
+    Sandbox_IsoGenerator = "IsoGenerator",
+	}

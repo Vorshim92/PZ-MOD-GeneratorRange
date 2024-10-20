@@ -1,0 +1,9 @@
+VERSION = 1,
+
+option IsoGenerator
+{
+  type = boolean,
+  default = true,
+  page = IsoGenerator,
+  translation = IsoGenerator_Boolean,
+}

@@ -1,5 +1,5 @@
 --***********************************************************
---**                    THE Vorshim STONE                    **
+--**                    THE Vorshim STONED                 **
 --***********************************************************
 
 if isClient() then return end
@@ -16,6 +16,8 @@ local function changeGenerator(object)
 	object:setFuel(999999.0)
 	object:setCondition(999999)
     object:transmitModData()
+    local square = object:getSquare()
+    square:transmitModdata()
 end
 
 local PRIORITY = 5
@@ -63,3 +65,6 @@ local function onClientCommand(module, command, player, args)
 end
 
 Events.OnClientCommand.Add(onClientCommand)
+
+-- TODO: agganciare Events.EveryDays per reimpostare fuel/condition dei generatori pyno
+-- anche quando un player resta fisso nella cella (OnLoadWithSprite non viene ritriggerato in quel caso)
